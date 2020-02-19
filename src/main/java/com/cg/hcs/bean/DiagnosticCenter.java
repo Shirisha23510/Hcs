@@ -1,13 +1,14 @@
 package com.cg.hcs.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DiagnosticCenter {
-	private int centerId;
+	private String centerId;
 	private String centerName;
-	private List<String> listOfTests;
+	private List<Test> listOfTests;
 	private List<Appointment> appointmentList;
-	public DiagnosticCenter(int centerId, String centerName, List<String> listOfTests,
+	public DiagnosticCenter(String centerId, String centerName, List<Test> listOfTests,
 			List<Appointment> appointmentList) {
 		super();
 		this.centerId = centerId;
@@ -18,10 +19,10 @@ public class DiagnosticCenter {
 	public DiagnosticCenter() {
 		super();
 	}
-	public int getCenterId() {
+	public String getCenterId() {
 		return centerId;
 	}
-	public void setCenterId(int centerId) {
+	public void setCenterId(String centerId) {
 		this.centerId = centerId;
 	}
 	public String getCenterName() {
@@ -30,10 +31,10 @@ public class DiagnosticCenter {
 	public void setCenterName(String centerName) {
 		this.centerName = centerName;
 	}
-	public List<String> getListOfTests() {
+	public List<Test> getListOfTests() {
 		return listOfTests;
 	}
-	public void setListOfTests(List<String> listOfTests) {
+	public void setListOfTests( List<Test>listOfTests) {
 		this.listOfTests = listOfTests;
 	}
 	public List<Appointment> getAppointmentList() {
